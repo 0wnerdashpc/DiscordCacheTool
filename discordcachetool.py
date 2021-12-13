@@ -1,7 +1,7 @@
 import os, shutil
 
 try:
-    user = input('Please enter your PC username, you can find this at C:\\Users\\NAMEHERE\n')
+    user = os.environ.get('USERNAME')
     source_dir = 'C:/Users/'+user+'/AppData/Roaming/Discord/Cache/'
     target_dir = 'C:/Users/'+user+'/Desktop/DiscordImgs/'
     try:
